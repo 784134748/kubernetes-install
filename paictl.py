@@ -1,0 +1,359 @@
+#!/usr/bin/env python
+
+# Copyright (c) Microsoft Corporation
+# All rights reserved.
+#
+# MIT License
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+# documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and
+# to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+# BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+# DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+from __future__ import print_function
+
+import os
+import sys
+import argparse
+import logging
+import logging.config
+
+from deployment.confStorage.download import download_configuration
+from deployment.confStorage.synchronization import synchronization
+from deployment.confStorage.external_version_control.external_config import uploading_external_config
+from deployment.confStorage.get_cluster_id import get_cluster_id
+
+from deployment.paiLibrary.common import file_handler
+from deployment.paiLibrary.clusterObjectModel import objectModelFactory
+from deployment.paiLibrary.paiCluster import cluster_util
+
+from deployment.k8sPaiLibrary.maintainlib import kubectl_conf_check
+from deployment.k8sPaiLibrary.maintainlib import kubectl_install
+
+from deployment.clusterObjectModel.cluster_object_model import cluster_object_model
+
+logger = logging.getLogger(__name__)
+
+
+def setup_logging():
+    """
+    Setup logging configuration.
+    """
+    configuration_path = "deployment/sysconf/logging.yaml"
+    logging_configuration = file_handler.load_yaml_config(configuration_path)
+    logging.config.dictConfig(logging_configuration)
+
+
+#########
+## TODO: Please remove all function following, after cluster_object_model is finsied.
+
+
+def load_cluster_objectModel_service(config_path):
+    objectModel = objectModelFactory.objectModelFactory(config_path)
+    ret = objectModel.objectModelPipeLine()
+
+    return ret["service"]
+
+
+def load_cluster_objectModel_k8s(config_path):
+    objectModel = objectModelFactory.objectModelFactory(config_path)
+    ret = objectModel.objectModelPipeLine()
+    return ret["k8s"]
+
+
+def cluster_object_model_generate_service(config_path):
+    cluster_config = load_cluster_objectModel_service(config_path)
+    return cluster_config
+
+
+def cluster_object_model_generate_k8s(config_path):
+    cluster_config = load_cluster_objectModel_k8s(config_path)
+    return cluster_config
+
+
+## TODO: Please remove all function above, after cluster_object_model is finsied.
+#########
+
+# True : continue
+# False: exit
+def kubectl_env_checking(cluster_object_mode):
+    kubectl_conf_ck_worker = kubectl_conf_check.kubectl_conf_check(cluster_object_mode)
+    if kubectl_conf_ck_worker.check() == False:
+        count_input = 0
+
+        while True:
+            user_input = raw_input("Do you want to re-install kubectl by paictl? (Y/N) ")
+
+            if user_input == "N":
+                count_quit = 0
+                while True:
+                    quit_or_not = raw_input("Do you want to quit by this operation? (Y/N) ")
+                    if quit_or_not == "Y":
+                        return False
+                    elif quit_or_not == "N":
+                        return True
+                    else:
+                        print(" Please type Y or N.")
+                    count_quit = count_quit + 1
+                    if count_quit == 3:
+                        logger.warning("3 Times.........  Sorry,  we will force stopping your operation.")
+                        return False
+
+            elif user_input == "Y":
+                kubectl_install_worker = kubectl_install.kubectl_install(cluster_object_mode)
+                kubectl_install_worker.run()
+                return True
+
+            else:
+                print(" Please type Y or N.")
+
+            count_input = count_input + 1
+            if count_input == 3:
+                logger.warning("3 Times.........  Sorry,  we will force stopping your operation.")
+                return False
+    return True
+
+
+class SubCmd(object):
+    """ interface class for defining sub-command for paictl """
+
+    def register(self, parser):
+        """ subclass use this method to register arguments """
+        pass
+
+    @staticmethod
+    def add_handler(parser, handler, *args, **kwargs):
+        """ helper function for adding sub-command handler """
+        sub_parser = parser.add_parser(*args, **kwargs)
+        sub_parser.set_defaults(handler=handler)  # let handler handle this subcmd
+        return sub_parser
+
+    def run(self, args):
+        """ will call run with expected args, subclass do not have to override this method
+        if subclass use `add_handler` to register handler. """
+        args.handler(args)
+
+
+class Cluster(SubCmd):
+
+    def register(self, parser):
+        cluster_parser = parser.add_subparsers(help="cluster operations")
+
+        bootup_parser = SubCmd.add_handler(cluster_parser, self.k8s_bootup, "k8s-bootup")
+        clean_parser = SubCmd.add_handler(cluster_parser, self.k8s_clean, "k8s-clean")
+        env_parser = SubCmd.add_handler(cluster_parser, self.k8s_set_environment, "k8s-set-env")
+
+        bootup_parser.add_argument("-p", "--config-path", dest="config_path", required=True,
+                                   help="path of cluster configuration file")
+
+        clean_parser.add_argument("-p", "--config-path", dest="config_path", required=True,
+                                  help="path of cluster configuration file")
+        clean_parser.add_argument("-f", "--force", dest="force", required=False, action="store_true",
+                                  help="clean all the data forcefully")
+
+        env_parser.add_argument("-p", "--config-path", dest="config_path", help="path of cluster configuration file")
+
+    def k8s_bootup(self, args):
+        cluster_object_model_instance = cluster_object_model(args.config_path)
+        com = cluster_object_model_instance.run()
+        logger.info("Begin to initialize PAI k8s cluster.")
+        cluster_util.maintain_cluster_k8s(com, option_name="deploy", clean=True)
+        logger.info("Finish initializing PAI k8s cluster.")
+
+    def k8s_clean(self, args):
+        # just use 'k8s-clean' for testing temporarily.
+        cluster_object_model_instance = cluster_object_model(args.config_path)
+        com = cluster_object_model_instance.run()
+        logger.warning("--------------------------------------------------------")
+        logger.warning("--------------------------------------------------------")
+        logger.warning("----------     Dangerous Operation!!!    ---------------")
+        logger.warning("------     Your k8s Cluster will be destroyed    -------")
+        logger.warning("------     PAI service on k8s will be stopped    -------")
+        logger.warning("--------------------------------------------------------")
+        if args.force:
+            logger.warning("--------------------------------------------------------")
+            logger.warning("----------    ETCD data will be cleaned.    ------------")
+            logger.warning("-----    If you wanna keep pai's user data.    ---------")
+            logger.warning("-----         Please backup etcd data.         ---------")
+            logger.warning("-----      And restore it after k8s-bootup     ---------")
+            logger.warning("---     And restore it before deploy pai service    ----")
+            logger.warning("--------------------------------------------------------")
+        logger.warning("--------------------------------------------------------")
+        logger.warning("----    Please ensure you wanna do this operator, ------")
+        logger.warning("-------        after knowing all risk above.     -------")
+        logger.warning("--------------------------------------------------------")
+        logger.warning("--------------------------------------------------------")
+
+        count_input = 0
+
+        while True:
+            user_input = raw_input("Do you want to continue this operation? (Y/N) ")
+            if user_input == "N":
+                return
+            elif user_input == "Y":
+                break
+            else:
+                print(" Please type Y or N.")
+            count_input = count_input + 1
+            if count_input == 3:
+                logger.warning("3 Times.........  Sorry,  we will force stopping your operation.")
+                return
+
+        logger.info("Begin to clean up whole cluster.")
+        cluster_util.maintain_cluster_k8s(com, option_name="clean", force=args.force, clean=True)
+        logger.info("Clean up job finished")
+
+    def k8s_set_environment(self, args):
+
+        if args.config_path != None:
+            args.config_path = os.path.expanduser(args.config_path)
+            cluster_object_model_instance = cluster_object_model(args.config_path)
+            com = cluster_object_model_instance.run()
+        else:
+            com = None
+        kubectl_install_worker = kubectl_install.kubectl_install(com)
+        kubectl_install_worker.run()
+
+
+class Configuration(SubCmd):
+
+    def register(self, parser):
+        conf_parser = parser.add_subparsers(help="configuration operations")
+
+        generate_parser = SubCmd.add_handler(conf_parser, self.generate_configuration, "generate",
+                                             description="Generate configuration files based on a quick-start yaml file.",
+                                             formatter_class=argparse.RawDescriptionHelpFormatter)
+        push_parser = SubCmd.add_handler(conf_parser, self.push_configuration, "push",
+                                         description="Push configuration to kubernetes cluster as configmap.",
+                                         formatter_class=argparse.RawDescriptionHelpFormatter)
+        pull_parser = SubCmd.add_handler(conf_parser, self.pull_configuration, "pull",
+                                         description="Get the configuration stored in the k8s cluster.",
+                                         formatter_class=argparse.RawDescriptionHelpFormatter)
+        get_id_parser = SubCmd.add_handler(conf_parser, self.get_cluster_id, "get-id",
+                                           description="Get the cluster-id stored in the k8s cluster.",
+                                           formatter_class=argparse.RawDescriptionHelpFormatter)
+        external_config_update_parser = SubCmd.add_handler(conf_parser, self.update_external_config,
+                                                           "external-config-update",
+                                                           description="Update configuration of external storage where you could configure the place to sync the latest cluster configuration",
+                                                           formatter_class=argparse.RawDescriptionHelpFormatter)
+
+        generate_parser.add_argument("-i", "--input", dest="quick_start_config_file", required=True,
+                                     help="the path of the quick-start configuration file (yaml format) as the input")
+        generate_parser.add_argument("-o", "--output", dest="configuration_directory", required=True,
+                                     help="the path of the directory the configurations will be generated to")
+        generate_parser.add_argument("-f", "--force", dest="force", action="store_true", default=False,
+                                     help="overwrite existing files")
+
+        mutually_update_option = push_parser.add_mutually_exclusive_group()
+        mutually_update_option.add_argument("-p", "--cluster-conf-path", dest="cluster_conf_path", default=None,
+                                            help="the path of directory which stores the cluster configuration.")
+        mutually_update_option.add_argument("-e", "--external-storage-conf-path", dest="external_storage_conf_path",
+                                            default=None,
+                                            help="the path of external storage configuration.")
+        push_parser.add_argument("-c", "--kube-config-path", dest="kube_config_path", default="~/.kube/config",
+                                 help="The path to KUBE_CONFIG file. Default value: ~/.kube/config")
+
+        pull_parser.add_argument("-o", "--config-output-path", dest="config_output_path", required=True,
+                                 help="the path of the directory to store the configuration downloaded from k8s.")
+        pull_parser.add_argument("-c", "--kube-config-path", dest="kube_config_path", default="~/.kube/config",
+                                 help="The path to KUBE_CONFIG file. Default value: ~/.kube/config")
+
+        get_id_parser.add_argument("-c", "--kube-config-path", dest="kube_config_path", default="~/.kube/config",
+                                   help="The path to KUBE_CONFIG file. Default value: ~/.kube/config")
+
+        external_config_update_parser.add_argument("-e", "--extneral-storage-conf-path",
+                                                   dest="external_storage_conf_path", required=True,
+                                                   help="the path of external storage configuration.")
+        external_config_update_parser.add_argument("-c", "--kube-config-path", dest="kube_config_path",
+                                                   default="~/.kube/config",
+                                                   help="The path to KUBE_CONFIG gile. Default value: ~/.kube/config")
+
+    def generate_configuration(self, args):
+        cluster_util.generate_configuration(
+            args.quick_start_config_file,
+            args.configuration_directory,
+            args.force)
+
+    def push_configuration(self, args):
+        if args.cluster_conf_path != None:
+            args.cluster_conf_path = os.path.expanduser(args.cluster_conf_path)
+        if args.external_storage_conf_path != None:
+            args.external_storage_conf_path = os.path.expanduser(args.external_storage_conf_path)
+        if args.kube_config_path != None:
+            args.kube_config_path = os.path.expanduser(args.kube_config_path)
+        sync_handler = synchronization(
+            pai_cluster_configuration_path=args.cluster_conf_path,
+            local_conf_path=args.external_storage_conf_path,
+            kube_config_path=args.kube_config_path
+        )
+        sync_handler.sync_data_from_source()
+
+    def pull_configuration(self, args):
+        if args.config_output_path != None:
+            args.config_output_path = os.path.expanduser(args.config_output_path)
+        if args.kube_config_path != None:
+            args.kube_config_path = os.path.expanduser(args.kube_config_path)
+        get_handler = download_configuration(
+            config_output_path=args.config_output_path,
+            kube_config_path=args.kube_config_path
+        )
+        get_handler.run()
+
+    def get_cluster_id(self, args):
+        if args.kube_config_path != None:
+            args.kube_config_path = os.path.expanduser(args.kube_config_path)
+        get_id_handler = get_cluster_id(kube_config_path=args.kube_config_path)
+        get_id_handler.run()
+
+    def update_external_config(self, args):
+        if args.kube_config_path != None:
+            args.kube_config_path = os.path.expanduser(args.kube_config_path)
+        if args.external_storage_conf_path != None:
+            args.external_storage_conf_path = os.path.expanduser(args.external_storage_conf_path)
+        external_conf_update = uploading_external_config(
+            external_storage_conf_path=args.external_storage_conf_path,
+            kube_config_path=args.kube_config_path
+        )
+        external_conf_update.update_latest_external_configuration()
+
+
+class Main(SubCmd):
+    def __init__(self, subcmds):
+        self.subcmds = subcmds
+
+    def register(self, parser):
+        sub_parser = parser.add_subparsers(help="paictl operations")
+
+        for name, subcmd in self.subcmds.items():
+            subparser = SubCmd.add_handler(sub_parser, subcmd.run, name)
+            subcmd.register(subparser)
+
+
+def main(args):
+    parser = argparse.ArgumentParser()
+
+    main_handler = Main({
+        "cluster": Cluster(),
+        "config": Configuration()
+    })
+
+    main_handler.register(parser)
+
+    args = parser.parse_args(args)
+
+    args.handler(args)
+
+
+if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    os.chdir(script_dir)
+
+    setup_logging()
+    main(sys.argv[1:])
