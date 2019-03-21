@@ -21,7 +21,7 @@ mkdir -p ~/.kube
 
 if which kubectl > /dev/null; then
     echo "kubectl has been installed."
-    echo "Skip this precess"
+    echo "Skip this process"
     exit 0
 fi
 
@@ -32,7 +32,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 chmod +x ./kubectl
 
 path_of_usr_local_bin="/usr/local/bin"
-[[ -d "$staticpod" ]] ||
+[[ -d "${staticpod}" ]] ||
 {
     mkdir -p ${path_of_usr_local_bin}
 }

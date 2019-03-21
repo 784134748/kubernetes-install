@@ -27,10 +27,11 @@ logger = logging.getLogger(__name__)
 
 
 def get_subdirectory_list(path):
-
-    return next(os.walk(path))[1]
-
-
+    try:
+        subdirectory_list = next(os.walk(path))[1]
+        return subdirectory_list
+    except StopIteration:
+        return []
 
 def directory_create(path):
 

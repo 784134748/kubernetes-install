@@ -17,21 +17,20 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-bad_member_ip=$1
-bad_member_etcd_id=$2
+member_ip=$1
+member_etcd_id=$2
 
 target_id=`docker ps --filter "name=container_etcd-server" -q`
 
-bad_member_hash=`docker exec -it $target_id etcdctl member list | grep $bad_member_ip | cut -d: -f1`
+member_hash=`docker exec -it ${target_id} etcdctl member list | grep ${member_ip} | cut -d: -f1`
 
-if [ "$bad_member_hash" == "" ];then
+if [[ -n "${member_hash}" ]]; then
    echo Unable to find the member hash code in the list.
    echo Task remove-member-from-etcd will quit.
    exit 0
 fi
 
-echo etcd bad member hash code: $bad_member_hash
+echo etcd bad member hash code: ${member_hash}
 
-
-docker exec -it $target_id etcdctl member remove $bad_member_hash
-echo etcd bad member $bad_member_hash is removed from cluster
+docker exec -it ${target_id} etcdctl member remove ${member_hash}
+echo etcd bad member ${member_hash} is removed from cluster

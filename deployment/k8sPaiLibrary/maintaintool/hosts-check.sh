@@ -32,4 +32,4 @@ grep -q "127.0.0.1" /etc/hosts && \
 sed -i "/127.0.1.1/s/^/# /" /etc/hosts
 
 # Comment hostip line
-sed -i "/$hostip/s/^/# /" /etc/hosts
+sed -i "/${hostip}/s/^/# /" /etc/hosts

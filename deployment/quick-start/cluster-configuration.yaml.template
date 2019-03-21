@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Copyright (c) Microsoft Corporation
 # All rights reserved.
 #
@@ -17,9 +15,41 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-member_ip=$1
-member_etcd_id=$2
 
-target_id=`docker ps --filter "name=container_etcd-server" -q`
+# If corresponding values aren't be set in the machine list, the default value will be filled in.
+default-machine-properties:
+  # Account with sudo permission
+  username: {{ env["ssh-username"] }}
+  password: {{ env["ssh-password"] }}
+  sshport: {{ env["ssh-port"] }}
 
-docker exec -it ${target_id} etcdctl member add ${member_etcd_id} http://${member_ip}:2380
+machine-sku:
+  GENERIC:
+    mem: 1
+    gpu:
+      type: generic
+      count: 1
+    cpu:
+      vcore: 1
+    os: ubuntu16.04
+
+machine-list:
+{%- for m in env["machines"] %}
+  - hostname: {{ m["hostname"] }}
+    hostip: {{ m["ip"] }}
+    machine-type: GENERIC
+  {%- if loop.index == 1 %}
+    k8s-role: master
+    etcdid: etcdid1
+    zkid: "1"
+    dashboard: "true"
+    pai-master: "true"
+  {%- else %}
+    k8s-role: worker
+    pai-worker: "true"
+  {%- endif %}
+  {%- if loop.length == 1 %}
+    pai-worker: "true"
+    docker-data: /var/lib/docker
+  {%- endif %}
+{%- endfor %}

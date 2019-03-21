@@ -21,21 +21,17 @@
 # step1 : remove etcd.yaml
 rm /etc/kubernetes/manifests/etcd.yaml
 
-
 # step2: stop container
 target_id=`docker ps --filter "name=POD_etcd-server" -q`
-docker kill $target_id
-docker rm $target_id
+docker kill ${target_id}
+docker rm ${target_id}
 
 target_id=`docker ps --filter "name=container_etcd-server" -q`
-docker kill $target_id
-docker rm $target_id
-
+docker kill ${target_id}
+docker rm ${target_id}
 
 # step3: delete etcd server data
 if [ -d "{{ cluster_cfg['kubernetes']['etcd-data-path'] }}" ]; then
-
     rm -rf {{ cluster_cfg['kubernetes']['etcd-data-path'] }}
-
 fi
 

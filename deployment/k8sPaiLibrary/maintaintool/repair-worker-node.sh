@@ -20,25 +20,25 @@
 docker stop kubelet
 docker rm kubelet
 
-for ID in `docker ps -a | awk "/k8s_/ {print\\$1}"`; do docker kill $ID; docker rm $ID ;  done
+for id in `docker ps -a | awk "/k8s_/ {print\\$1}"`
+do
+    docker kill ${id}
+    docker rm ${id}
+done
 
-etcdyaml="/etc/kubernetes/manifests/etcd.yaml"
-if [ -f "$etcdyaml" ]; then
-
+etcd_yaml="/etc/kubernetes/manifests/etcd.yaml"
+if [[ -f ${etcd_yaml} ]]; then
     echo  Error: This is a infra node. The repair tool will exit.
     exit 1
 fi
 
 # check etc/ exist or not.
-staticpod="repair/etc"
-if [ -d "$staticpod" ]; then
-
-    cp -r repair/etc /
-
+static_pod="repair/etc"
+if [[ -d ${static_pod} ]]; then
+    cp -r ${static_pod} /
 fi
 
-chmod u+x repair/kubelet.sh
-./repair/kubelet.sh
+chmod u+x repair/kubelet.sh && ./repair/kubelet.sh
 
 
 

@@ -21,43 +21,35 @@ option=$1
 
 apt-get install -y gawk
 
-docker stop kubelet
+docker kill kubelet
 docker rm kubelet
 
-for ID in `docker ps -a | awk "/k8s_/ {print\\$1}"`; do docker kill $ID; docker rm $ID ;  done
+for id in `docker ps -a | awk "/k8s_/ {print\\$1}"`;
+do
+    docker kill ${id};
+    docker rm ${id}
+done
 
-if [ -d "/etc/kubernetes" ]; then
-
+if [[ -d "/etc/kubernetes" ]]; then
     rm -rf /etc/kubernetes
-
 fi
 
-if [ -d "{{ cluster_cfg['kubernetes']['etcd-data-path'] }}" -a "$option" == "-f" ]; then
-
+if [[ -d "{{ cluster_cfg['kubernetes']['etcd-data-path'] }}" -a "$option" == "-f" ]]; then
     rm -rf {{ cluster_cfg['kubernetes']['etcd-data-path'] }}
-
 fi
 
-if [ -d "/var/log/pods" ]; then
-
+if [[ -d "/var/log/pods" ]]; then
     rm -rf /var/log/pods
-
 fi
 
-if [ -d "/var/lib/kubelet/pods" ]; then
-
+if [[ -d "/var/lib/kubelet/pods" ]]; then
     rm -rf /var/lib/kubelet/pods
-
 fi
 
-if [ -d "src" ]; then
-
+if [[ -d "src" ]]; then
     rm -rf src
-
 fi
 
-if [ -f "kubernetes.tar" ]; then
-
+if [[ -f "kubernetes.tar" ]]; then
     rm -rf kubernetes.tar
-
 fi

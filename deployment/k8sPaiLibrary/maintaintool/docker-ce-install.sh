@@ -79,9 +79,9 @@ fi
 
 [[ ! -f "/etc/docker/daemon.json" ]] &&
 {
-    cp $scriptPath/docker-daemon.json /etc/docker/daemon.json
+    cp ${scriptPath}/docker-daemon.json /etc/docker/daemon.json
 }
 
-python $scriptPath/docker-config-update.py -s $scriptPath/docker-daemon.json -d /etc/docker/daemon.json
+python ${scriptPath}/docker-config-update.py -s ${scriptPath}/docker-daemon.json -d /etc/docker/daemon.json
 
 systemctl restart docker

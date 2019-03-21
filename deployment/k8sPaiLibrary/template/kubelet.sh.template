@@ -34,23 +34,24 @@ DOCKER_ROOT_DIR_FOR_KUBELET=`docker info | grep "Docker Root Dir" | awk -F' ' '{
 
 echo "Docker ROOT DIR IS $DOCKER_ROOT_DIR_FOR_KUBELET"
 
+docker kill kubelet && docker rm kubelet >/dev/null
 
 docker run \
-    --name=kubelet \
-    --volume=/etc/kubernetes:/etc/kubernetes:rw \
-    --volume=/:/rootfs:rw \
-    --volume=/sys:/sys:rw \
-    --volume=/dev:/dev:rw \
-    --volume=${DOCKER_ROOT_DIR_FOR_KUBELET}:${DOCKER_ROOT_DIR_FOR_KUBELET}:rw \
-    --volume=/var/lib/kubelet/:/var/lib/kubelet:rw,shared \
-    --volume=/etc/resolv.conf:/etc/resolv.conf:rw \
-    --volume=/var/run:/var/run:rw \
-    --volume=/var/log:/var/log:rw \
-    --restart=always \
-    --net=host \
-    --pid=host \
-    --privileged=true \
-    -d \
+  --name=kubelet \
+  --volume=/etc/kubernetes:/etc/kubernetes:rw \
+  --volume=/:/rootfs:rw \
+  --volume=/sys:/sys:rw \
+  --volume=/dev:/dev:rw \
+  --volume=${DOCKER_ROOT_DIR_FOR_KUBELET}:${DOCKER_ROOT_DIR_FOR_KUBELET}:rw \
+  --volume=/var/lib/kubelet/:/var/lib/kubelet:rw,shared \
+  --volume=/etc/resolv.conf:/etc/resolv.conf:rw \
+  --volume=/var/run:/var/run:rw \
+  --volume=/var/log:/var/log:rw \
+  --restart=always \
+  --net=host \
+  --pid=host \
+  --privileged=true \
+   -d \
     {{ cluster_cfg['kubernetes']['docker-registry'] }}/hyperkube:{{ cluster_cfg['kubernetes']['hyperkube-version'] }} \
     /hyperkube kubelet --fail-swap-on=false --address={{ hostcofig['hostip'] }} \
   --register-node=true \

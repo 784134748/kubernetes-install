@@ -20,13 +20,14 @@
 # Special case: If this list contains only one machine, then this machine will be the master
 # and the worker at the same time.
 machines:
-  - 10.20.61.88
-  - 192.168.31.203
+  - 10.20.37.175
+  - 10.20.94.51
+  - 10.20.41.233
 
 # (Required) Log-in info of all machines. System administrator should guarantee
 # that the username/password pair or username/key-filename is valid and has sudo privilege.
-ssh-username: yalonglee
-ssh-password: 123456
+ssh-username: lab
+ssh-password: technical
 
 # (Optional, default=None) the key file that ssh client uses, that has higher priority then password.
 # Secret name is used by kubernetes to create secret for the key file in cluster so that service could use it.
