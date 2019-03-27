@@ -34,7 +34,7 @@ if [[ -d "/etc/kubernetes" ]]; then
     rm -rf /etc/kubernetes
 fi
 
-if [[ -d "{{ cluster_cfg['kubernetes']['etcd-data-path'] }}" -a "$option" == "-f" ]]; then
+if [[ -d "{{ cluster_cfg['kubernetes']['etcd-data-path'] }}" && "${option}" == "-f" ]]; then
     rm -rf {{ cluster_cfg['kubernetes']['etcd-data-path'] }}
 fi
 

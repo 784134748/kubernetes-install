@@ -19,20 +19,20 @@
 
 set -e
 
-scriptPath=$1
+script_path=$1
 
 #stop all swap on the machine
 swapoff -a
 
 # check etc/ exist or not.
-static_pod="${scriptPath}/etc"
-if [[ -d "${staticpod}" ]]; then
-    cp -r ${scriptPath}/etc /
+static_pod="${script_path}/etc"
+if [[ -d "${static_pod}" ]]; then
+    cp -r ${script_path}/etc /
 fi
 
-manifestpath="/etc/kubernetes/manifests"
-if [[ ! -d "${manifestpath}" ]]; then
-    mkdir -p ${manifestpath}
+manifest_path="/etc/kubernetes/manifests"
+if [[ ! -d "${manifest_path}" ]]; then
+    mkdir -p ${manifest_path}
 fi
 
-chmod u+x ${scriptPath}/kubelet.sh && ./${scriptPath}/kubelet.sh
+chmod u+x ${script_path}/kubelet.sh && ./${script_path}/kubelet.sh

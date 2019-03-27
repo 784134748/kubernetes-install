@@ -21,7 +21,7 @@
 # Edit /etc/hosts file for remote host
 
 # set host ip
-hostip=$1
+host_ip=$1
 
 # Change 127.0.0.1 line to "127.0.0.1 localhost $hostname"
 grep -q "127.0.0.1" /etc/hosts && \
@@ -32,4 +32,4 @@ grep -q "127.0.0.1" /etc/hosts && \
 sed -i "/127.0.1.1/s/^/# /" /etc/hosts
 
 # Comment hostip line
-sed -i "/${hostip}/s/^/# /" /etc/hosts
+sed -i "/${host_ip}/s/^/# /" /etc/hosts

@@ -1891,3 +1891,1274 @@
 2019-03-21 23:22:35,182 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
 2019-03-21 23:22:45,524 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
 2019-03-21 23:22:45,525 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:40:38,325 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:40:38,985 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:40:39,539 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-22 12:40:39,833 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:40:40,676 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:40:41,255 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-22 12:40:41,620 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:40:42,592 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:40:43,363 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-22 12:40:43,684 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:40:44,601 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:40:45,225 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-22 12:55:04,255 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-22 12:55:04,256 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-22 12:55:04,256 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-22 12:55:04,256 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-22 12:55:04,256 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-22 12:55:04,256 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-22 12:55:04,256 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-22 12:55:04,257 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-22 12:55:04,258 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-22 12:55:04,258 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-22 12:55:04,278 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-22 12:55:04,278 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ master ]
+2019-03-22 12:55:04,619 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:05,338 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:05,888 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 12:55:06,140 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:06,827 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:08,010 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:08,977 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:09,533 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 12:55:10,023 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 12:55:10,546 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:11,536 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:12,228 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf master-deployment.tar
+2019-03-22 12:55:12,672 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:13,495 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:14,068 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./master-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 12:55:14,541 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:15,264 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:15,742 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-22 12:55:25,373 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:26,090 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:26,711 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-22 12:55:27,376 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.41.233!
+2019-03-22 12:55:27,376 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 12:55:27,388 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 12:55:27,389 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 12:55:27,667 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:29,131 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:30,210 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 12:55:30,355 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 12:55:30,356 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-22 12:55:30,761 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:31,816 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:32,344 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 12:55:32,660 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:33,790 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:35,255 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:36,135 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:36,641 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 12:55:37,482 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 12:55:37,941 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:39,065 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:40,398 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-22 12:55:40,910 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:42,636 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:43,547 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 12:55:44,113 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:44,910 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:55:45,867 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-22 12:55:58,110 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:55:59,789 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:01,075 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-22 12:56:01,986 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-22 12:56:01,986 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 12:56:01,996 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 12:56:01,996 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 12:56:02,510 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:04,111 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:05,110 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 12:56:05,306 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 12:56:05,307 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-22 12:56:05,826 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:07,756 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:09,010 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 12:56:09,886 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:11,406 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:12,855 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:13,975 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:15,084 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 12:56:16,503 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 12:56:17,252 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:19,132 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:20,741 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-22 12:56:21,288 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:22,455 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:22,847 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 12:56:23,065 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:24,070 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:24,686 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-22 12:56:36,374 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:37,836 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:38,501 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-22 12:56:39,120 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-22 12:56:39,122 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 12:56:39,157 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 12:56:39,159 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 12:56:39,633 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 12:56:41,118 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 12:56:42,040 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 12:56:42,208 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 12:56:42,208 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-22 12:56:42,235 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl on the dev-box.
+2019-03-22 12:56:42,236 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the configuation file of kubectl.
+2019-03-22 12:56:42,236 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Cluster configuration is detected.
+2019-03-22 12:56:42,236 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the KUBECONIFG based on the cluster configuration.
+2019-03-22 12:56:42,242 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully configure kubeconfig in the dev-box.
+2019-03-22 12:56:43,524 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:56:43,525 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:56:54,140 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:56:54,141 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:57:04,788 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:57:04,789 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:57:15,158 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:57:15,159 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:57:26,381 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:57:26,382 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:57:37,162 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:57:37,162 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:57:47,934 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:57:47,935 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:57:58,678 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:57:58,678 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:58:09,373 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:58:09,374 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:58:19,896 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:58:19,897 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:58:31,413 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:58:31,413 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:58:42,900 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:58:42,900 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:58:53,365 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:58:53,366 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:59:03,873 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:59:03,874 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 12:59:14,568 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 12:59:14,569 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
+2019-03-22 13:06:54,572 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:06:54,998 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:06:55,316 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-22 13:06:55,469 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:06:55,964 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:06:56,197 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-22 13:06:56,280 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:06:56,697 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:06:56,968 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-22 13:06:57,056 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:06:57,420 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:06:57,698 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-22 13:11:08,756 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:11:09,437 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:11:09,902 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-22 13:11:10,102 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:11:10,507 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:11:10,822 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-22 13:11:55,161 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 13:11:56,431 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 13:11:56,905 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-22 14:31:59,512 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:31:59,800 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:00,067 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-22 14:32:00,146 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:00,424 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:00,680 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-22 14:32:00,766 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:01,058 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:01,321 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-22 14:32:01,407 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:01,695 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:01,926 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-22 14:32:43,067 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-22 14:32:43,068 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-22 14:32:43,068 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-22 14:32:43,068 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-22 14:32:43,068 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-22 14:32:43,068 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-22 14:32:43,068 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-22 14:32:43,069 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-22 14:32:43,070 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-22 14:32:43,070 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-22 14:32:43,070 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-22 14:32:43,092 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-22 14:32:43,093 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ master ]
+2019-03-22 14:32:43,289 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:43,579 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:43,810 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 14:32:43,909 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:44,195 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:44,531 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:44,818 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:45,028 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 14:32:45,226 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 14:32:45,368 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:45,678 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:45,963 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf master-deployment.tar
+2019-03-22 14:32:46,074 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:46,381 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:46,588 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./master-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 14:32:46,852 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:47,238 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:47,507 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-22 14:32:58,956 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:32:59,406 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:32:59,750 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-22 14:33:00,269 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.41.233!
+2019-03-22 14:33:00,270 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 14:33:00,281 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 14:33:00,282 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 14:33:00,470 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:00,783 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:01,028 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 14:33:01,068 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 14:33:01,068 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-22 14:33:01,191 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:01,508 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:01,727 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 14:33:01,797 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:02,047 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:02,405 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:02,702 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:02,925 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 14:33:03,124 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 14:33:03,269 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:03,552 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:03,821 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-22 14:33:03,906 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:04,170 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:04,442 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 14:33:04,589 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:04,918 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:05,217 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-22 14:33:16,450 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:16,765 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:17,056 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-22 14:33:17,577 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-22 14:33:17,578 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 14:33:17,590 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 14:33:17,590 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 14:33:17,720 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:18,040 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:18,351 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 14:33:18,416 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 14:33:18,417 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-22 14:33:18,633 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:18,967 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:19,294 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 14:33:19,407 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:19,723 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:20,306 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:20,661 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:20,911 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 14:33:21,098 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 14:33:21,224 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:21,579 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:22,024 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-22 14:33:22,230 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:23,249 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:23,587 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 14:33:23,796 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:24,088 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:24,345 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-22 14:33:35,487 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:35,819 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:36,152 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-22 14:33:36,703 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-22 14:33:36,704 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 14:33:36,717 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 14:33:36,718 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 14:33:36,802 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:33:37,193 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:33:37,486 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 14:33:37,570 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 14:33:37,570 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-22 14:33:37,590 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl on the dev-box.
+2019-03-22 14:33:37,591 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the configuation file of kubectl.
+2019-03-22 14:33:37,591 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Cluster configuration is detected.
+2019-03-22 14:33:37,591 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the KUBECONIFG based on the cluster configuration.
+2019-03-22 14:33:37,596 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully configure kubeconfig in the dev-box.
+2019-03-22 14:33:38,315 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:33:38,316 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:33:48,969 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:33:48,970 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:33:59,409 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:33:59,410 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:34:09,709 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:34:09,713 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:34:20,087 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:34:20,088 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:34:27,079 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:34:27,483 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:34:28,048 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-22 14:34:28,287 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:34:28,810 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:34:29,121 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-22 14:34:29,269 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:34:29,711 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:34:30,019 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-22 14:34:30,161 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:34:30,496 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:34:30,497 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:34:30,569 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:34:30,996 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-22 14:34:40,770 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:34:40,770 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:34:51,211 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:34:51,212 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:35:01,481 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:35:01,482 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:35:11,717 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:35:11,718 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:35:22,769 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:35:22,770 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:35:33,520 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:35:33,521 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:35:44,536 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:35:44,537 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:35:54,935 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:35:54,935 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:36:05,486 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:36:05,487 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
+2019-03-22 14:40:52,151 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:40:54,133 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:40:54,922 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-22 14:40:55,530 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:40:57,066 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:40:58,501 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-22 14:40:58,908 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:41:00,549 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:41:02,727 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-22 14:41:03,517 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:41:04,470 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:41:05,196 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-22 14:42:53,783 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-22 14:42:53,783 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-22 14:42:53,783 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-22 14:42:53,783 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-22 14:42:53,783 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-22 14:42:53,784 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-22 14:42:53,785 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-22 14:42:53,785 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-22 14:42:53,785 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-22 14:42:53,785 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-22 14:42:53,806 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-22 14:42:53,806 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.37.175, the node role is [ master ]
+2019-03-22 14:42:53,977 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:42:54,304 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:42:54,596 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-22 14:42:54,702 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:42:55,080 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:42:55,573 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:42:55,933 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:42:56,208 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 14:42:56,400 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 14:42:56,577 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:42:56,895 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:42:57,221 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf master-deployment.tar
+2019-03-22 14:42:57,343 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:42:57,700 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:42:57,982 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/hosts-check.sh 10.20.37.175
+2019-03-22 14:42:58,160 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:42:58,531 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:42:58,913 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-22 14:45:11,533 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:45:12,051 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:45:12,521 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-22 14:48:30,560 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.37.175!
+2019-03-22 14:48:30,560 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.37.175!
+2019-03-22 14:48:30,574 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 14:48:30,574 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.37.175!
+2019-03-22 14:48:31,095 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:31,872 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:32,298 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo rm -rf proxy-deployment*
+2019-03-22 14:48:32,460 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 14:48:32,460 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.94.51, the node role is [ worker ]
+2019-03-22 14:48:32,655 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:33,003 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:33,280 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: getent passwd lab | cut -d: -f6
+2019-03-22 14:48:33,424 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:33,771 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:34,285 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:34,596 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:34,833 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 14:48:35,001 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 14:48:35,099 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:35,383 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:35,683 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: tar -xvf worker-deployment.tar
+2019-03-22 14:48:35,779 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:36,172 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:36,466 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/hosts-check.sh 10.20.94.51
+2019-03-22 14:48:36,655 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:48:36,983 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:48:37,242 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-22 14:52:20,090 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:52:21,714 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:52:25,299 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-22 14:56:02,101 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.94.51!
+2019-03-22 14:56:02,101 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.94.51!
+2019-03-22 14:56:02,112 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 14:56:02,113 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.94.51!
+2019-03-22 14:56:02,473 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:03,922 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:04,810 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo rm -rf proxy-deployment*
+2019-03-22 14:56:05,012 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 14:56:05,012 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-22 14:56:05,589 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:07,475 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:08,165 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-22 14:56:08,602 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:09,322 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:10,897 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:12,523 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:13,566 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-22 14:56:14,487 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-22 14:56:15,055 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:16,079 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:16,858 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-22 14:56:17,352 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:18,078 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:18,692 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-22 14:56:19,145 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:19,841 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:20,216 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-22 14:56:31,945 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:32,387 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:32,769 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-22 14:56:33,642 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-22 14:56:33,642 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-22 14:56:33,653 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-22 14:56:33,654 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-22 14:56:33,879 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-22 14:56:34,603 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-22 14:56:34,977 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-22 14:56:35,055 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-22 14:56:35,056 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-22 14:56:35,074 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl on the dev-box.
+2019-03-22 14:56:35,075 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the configuation file of kubectl.
+2019-03-22 14:56:35,075 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Cluster configuration is detected.
+2019-03-22 14:56:35,075 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the KUBECONIFG based on the cluster configuration.
+2019-03-22 14:56:35,078 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully configure kubeconfig in the dev-box.
+2019-03-22 14:56:35,632 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:56:35,632 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:56:46,539 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:56:46,540 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:56:57,011 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:56:57,012 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:57:07,720 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:57:07,721 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:57:18,797 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:57:18,798 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:57:29,301 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:57:29,302 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:57:40,283 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:57:40,284 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:57:51,342 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:57:51,343 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:58:02,535 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:58:02,536 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:58:13,395 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:58:13,396 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:58:23,943 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:58:23,943 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:58:34,433 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:58:34,433 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:58:44,826 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:58:44,827 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:58:55,429 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:58:55,429 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Wait 10s, and retry it later.
+2019-03-22 14:59:05,983 [WARNING] - deployment.k8sPaiLibrary.maintainlib.common : There will be a delay after installing, please wait.
+2019-03-22 14:59:05,984 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
+2019-03-24 14:53:35,726 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:35,998 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:36,307 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-24 14:53:36,386 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:36,645 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:36,897 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-24 14:53:36,978 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:37,241 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:37,467 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-24 14:53:37,545 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:37,813 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:38,087 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-24 14:53:45,891 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:46,180 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:46,492 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-24 14:53:46,580 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:46,871 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:47,160 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-24 14:53:47,233 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:47,502 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:47,761 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-24 14:53:47,837 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:53:48,215 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:53:48,436 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-24 14:54:09,845 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-24 14:54:09,845 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-24 14:54:09,845 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-24 14:54:09,846 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-24 14:54:09,846 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-24 14:54:09,846 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-24 14:54:09,846 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-24 14:54:09,846 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-24 14:54:09,847 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-24 14:54:09,847 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-24 14:54:09,847 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-24 14:54:09,847 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-24 14:54:09,848 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-24 14:54:09,848 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-24 14:54:09,848 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-24 14:54:09,848 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-24 14:54:09,848 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-24 14:54:09,849 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-24 14:54:09,849 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-24 14:54:09,966 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-24 14:54:09,968 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.37.175, the node role is [ master ]
+2019-03-24 14:54:10,503 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:10,926 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:11,202 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-24 14:54:11,285 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:11,592 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:12,007 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:12,393 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:12,686 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-24 14:54:12,893 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-24 14:54:13,040 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:13,355 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:13,642 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf master-deployment.tar
+2019-03-24 14:54:13,752 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:14,048 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:14,337 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/hosts-check.sh 10.20.37.175
+2019-03-24 14:54:14,483 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:14,810 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:15,102 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-24 14:54:27,226 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:27,511 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:27,803 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-24 14:54:28,600 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.37.175!
+2019-03-24 14:54:28,616 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.37.175!
+2019-03-24 14:54:28,631 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-24 14:54:28,632 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.37.175!
+2019-03-24 14:54:28,718 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:29,031 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:29,367 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo rm -rf proxy-deployment*
+2019-03-24 14:54:29,416 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-24 14:54:29,417 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.94.51, the node role is [ worker ]
+2019-03-24 14:54:29,632 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:29,959 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:30,337 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: getent passwd lab | cut -d: -f6
+2019-03-24 14:54:30,421 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:30,980 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:31,463 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:31,775 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:31,994 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-24 14:54:32,162 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-24 14:54:32,271 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:32,561 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:32,803 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: tar -xvf worker-deployment.tar
+2019-03-24 14:54:32,891 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:33,273 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:33,497 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/hosts-check.sh 10.20.94.51
+2019-03-24 14:54:33,616 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:33,887 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:34,168 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-24 14:54:45,444 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:45,789 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:46,052 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-24 14:54:46,689 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.94.51!
+2019-03-24 14:54:46,689 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.94.51!
+2019-03-24 14:54:46,703 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-24 14:54:46,703 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.94.51!
+2019-03-24 14:54:46,766 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:47,038 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:47,352 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo rm -rf proxy-deployment*
+2019-03-24 14:54:47,407 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-24 14:54:47,407 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-24 14:54:47,572 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:47,870 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:48,311 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-24 14:54:48,417 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:48,727 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:49,116 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:49,392 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:49,613 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-24 14:54:49,786 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-24 14:54:49,897 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:50,188 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:50,498 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-24 14:54:50,589 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:50,884 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:51,307 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-24 14:54:51,458 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:54:51,722 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:54:51,976 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-24 14:55:03,379 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:55:03,658 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:55:03,917 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-24 14:55:04,439 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-24 14:55:04,439 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-24 14:55:04,451 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-24 14:55:04,452 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-24 14:55:04,520 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-24 14:55:04,780 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-24 14:55:05,026 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-24 14:55:05,063 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-24 14:55:05,063 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-24 14:55:05,096 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl on the dev-box.
+2019-03-24 14:55:05,096 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the configuation file of kubectl.
+2019-03-24 14:55:05,097 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Cluster configuration is detected.
+2019-03-24 14:55:05,097 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the KUBECONIFG based on the cluster configuration.
+2019-03-24 14:55:05,104 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully configure kubeconfig in the dev-box.
+2019-03-24 14:55:06,363 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl and configure it!
+2019-03-24 14:55:08,391 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create kube-proxy daemon for kuberentes cluster.
+2019-03-24 14:55:08,936 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create kubernetes dashboard deployment for kuberentes cluster.
+2019-03-24 14:55:08,936 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create dashboard service.
+2019-03-24 14:55:09,459 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create dashboard deployment.
+2019-03-24 14:55:09,869 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Update node configuration into configmap in the namespace [ kube-system ] as the name [ pai-node-config ] 
+2019-03-24 14:55:10,015 [INFO] - deployment.paiLibrary.common.kubernetes_handler : configmap named pai-node-config is updated.
+2019-03-24 14:55:10,036 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : The kubernetes deployment is finished!
+2019-03-24 14:55:10,036 [INFO] - __main__ : Finish initializing PAI k8s cluster.
+2019-03-25 14:55:21,421 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 14:55:22,559 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 14:55:23,935 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-25 14:55:24,640 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 14:55:25,892 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 14:55:26,595 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-25 14:55:26,967 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 14:55:28,265 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 14:55:29,088 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-25 14:55:29,531 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 14:55:31,235 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 14:55:32,019 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-25 15:23:13,836 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-25 15:23:13,836 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-25 15:23:13,836 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-25 15:23:13,837 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-25 15:23:13,837 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-25 15:23:13,837 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-25 15:23:13,837 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-25 15:23:13,837 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-25 15:23:13,838 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-25 15:23:13,838 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-25 15:23:13,838 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-25 15:23:13,838 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-25 15:23:13,838 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-25 15:23:13,838 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-25 15:23:13,839 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-25 15:23:13,839 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-25 15:23:13,839 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-25 15:23:13,839 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-25 15:23:13,839 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-25 15:23:13,892 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-25 15:28:54,333 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.37.175, the node role is [ master ]
+2019-03-25 15:28:55,605 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:28:55,977 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:28:56,489 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-25 15:28:56,667 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:28:57,095 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:28:57,605 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:28:57,962 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:28:58,279 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-25 15:28:58,656 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-25 15:28:58,854 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:28:59,512 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:28:59,930 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf master-deployment.tar
+2019-03-25 15:29:00,224 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:00,923 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:01,310 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/hosts-check.sh 10.20.37.175
+2019-03-25 15:29:01,500 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:01,971 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:02,457 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-25 15:29:15,026 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:15,353 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:15,665 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-25 15:29:16,402 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.37.175!
+2019-03-25 15:29:24,425 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.37.175!
+2019-03-25 15:29:24,437 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-25 15:29:24,437 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.37.175!
+2019-03-25 15:29:24,621 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:25,045 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:25,356 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo rm -rf proxy-deployment*
+2019-03-25 15:29:25,442 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-25 15:29:25,443 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.94.51, the node role is [ worker ]
+2019-03-25 15:29:25,754 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:26,518 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:27,197 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: getent passwd lab | cut -d: -f6
+2019-03-25 15:29:27,650 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:29,074 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:31,046 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:32,924 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:34,384 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-25 15:29:36,299 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-25 15:29:39,008 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:40,419 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:41,751 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: tar -xvf worker-deployment.tar
+2019-03-25 15:29:42,310 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:43,696 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:44,990 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/hosts-check.sh 10.20.94.51
+2019-03-25 15:29:45,578 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:46,668 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:29:47,152 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-25 15:29:59,029 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:29:59,993 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:00,792 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-25 15:30:01,557 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.94.51!
+2019-03-25 15:30:01,558 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.94.51!
+2019-03-25 15:30:01,568 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-25 15:30:01,569 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.94.51!
+2019-03-25 15:30:02,319 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:03,293 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:03,741 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo rm -rf proxy-deployment*
+2019-03-25 15:30:03,856 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-25 15:30:03,856 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-25 15:30:04,161 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:04,733 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:05,245 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-25 15:30:05,534 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:06,155 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:06,944 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:07,457 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:07,940 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-25 15:30:08,620 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-25 15:30:09,060 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:09,554 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:09,850 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-25 15:30:09,969 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:10,249 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:10,512 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-25 15:30:10,657 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:10,982 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:11,246 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-25 15:30:22,786 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:23,069 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:23,388 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-25 15:30:23,920 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-25 15:30:23,920 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-25 15:30:23,931 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-25 15:30:23,931 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-25 15:30:24,055 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-25 15:30:24,334 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-25 15:30:24,593 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-25 15:30:24,630 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-25 15:30:24,630 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-27 00:11:01,349 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 00:11:01,349 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 00:11:01,349 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 00:11:01,350 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 00:11:01,350 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 00:11:01,350 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 00:11:01,350 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 00:11:01,351 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 00:11:01,351 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 00:11:01,352 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 00:11:01,352 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 00:11:01,352 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 00:11:01,353 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 00:11:01,353 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 00:11:01,353 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 00:11:01,353 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 00:11:01,354 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 00:11:01,354 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 00:11:01,354 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-27 00:11:01,424 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-27 00:12:22,800 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 00:12:22,801 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 00:12:22,801 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 00:12:22,801 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 00:12:22,801 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 00:12:22,802 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 00:12:22,802 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 00:12:22,802 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 00:12:22,802 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 00:12:22,802 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 00:12:22,803 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 00:12:22,803 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 00:12:22,803 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 00:12:22,803 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 00:12:22,804 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 00:12:22,804 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 00:12:22,804 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 00:12:22,804 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 00:12:22,805 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-27 00:12:22,868 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-27 00:18:22,153 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 00:18:22,155 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 00:18:22,156 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 00:18:22,157 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 00:18:22,157 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 00:18:22,157 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 00:18:22,157 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 00:18:22,158 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 00:18:22,158 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 00:18:22,158 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 00:18:22,159 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 00:18:22,159 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 00:18:22,159 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 00:18:22,159 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 00:18:22,160 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 00:18:22,160 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 00:18:22,160 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 00:18:22,160 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 00:18:22,161 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-27 00:18:22,256 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-27 20:51:21,552 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:21,856 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:22,134 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-27 20:51:22,218 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:22,510 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:22,768 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-27 20:51:22,844 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:23,116 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:23,363 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-27 20:51:23,438 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:23,723 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:23,952 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-27 20:51:30,641 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 20:51:30,642 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 20:51:30,643 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 20:51:30,644 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-27 20:51:30,664 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-27 20:51:30,665 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.37.175, the node role is [ master ]
+2019-03-27 20:51:30,842 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:31,134 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:31,430 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-27 20:51:31,513 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:31,783 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:32,157 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:32,439 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:32,730 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:51:32,893 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:51:33,041 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:33,326 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:33,593 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf master-deployment.tar
+2019-03-27 20:51:33,673 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:33,953 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:34,224 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/hosts-check.sh 10.20.37.175
+2019-03-27 20:51:34,369 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:34,645 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:34,887 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-27 20:51:37,448 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:37,711 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:37,954 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-27 20:51:38,547 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.37.175!
+2019-03-27 20:51:38,547 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.37.175!
+2019-03-27 20:51:38,557 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-27 20:51:38,558 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.37.175!
+2019-03-27 20:51:38,623 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:38,947 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:39,170 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo rm -rf proxy-deployment*
+2019-03-27 20:51:39,210 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-27 20:51:39,211 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.94.51, the node role is [ worker ]
+2019-03-27 20:51:39,366 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:39,659 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:39,906 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: getent passwd lab | cut -d: -f6
+2019-03-27 20:51:39,993 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:40,273 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:40,631 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:40,912 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:41,141 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:51:41,305 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:51:41,410 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:41,691 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:41,971 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: tar -xvf worker-deployment.tar
+2019-03-27 20:51:42,054 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:42,336 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:42,591 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/hosts-check.sh 10.20.94.51
+2019-03-27 20:51:42,741 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:43,011 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:43,256 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-27 20:51:44,004 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:44,270 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:44,515 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-27 20:51:45,063 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.94.51!
+2019-03-27 20:51:45,064 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.94.51!
+2019-03-27 20:51:45,076 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-27 20:51:45,076 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.94.51!
+2019-03-27 20:51:45,139 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:45,390 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:45,635 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo rm -rf proxy-deployment*
+2019-03-27 20:51:45,680 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-27 20:51:45,680 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-27 20:51:45,811 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:46,090 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:46,330 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-27 20:51:46,405 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:46,706 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:47,132 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:47,404 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:47,612 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:51:47,786 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:51:47,891 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:48,161 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:48,382 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-27 20:51:48,459 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:48,747 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:48,992 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-27 20:51:49,137 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:49,403 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:49,645 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-27 20:51:50,459 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:50,739 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:51,005 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-27 20:51:51,439 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-27 20:51:51,439 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-27 20:51:51,449 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-27 20:51:51,450 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-27 20:51:51,515 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:51:51,773 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:51:52,045 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-27 20:51:52,090 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-27 20:51:52,090 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-27 20:51:52,109 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl on the dev-box.
+2019-03-27 20:51:52,110 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the configuation file of kubectl.
+2019-03-27 20:51:52,110 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Cluster configuration is detected.
+2019-03-27 20:51:52,110 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the KUBECONIFG based on the cluster configuration.
+2019-03-27 20:51:52,113 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully configure kubeconfig in the dev-box.
+2019-03-27 20:51:53,440 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl and configure it!
+2019-03-27 20:51:55,482 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create kube-proxy daemon for kuberentes cluster.
+2019-03-27 20:51:55,880 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create kubernetes dashboard deployment for kuberentes cluster.
+2019-03-27 20:51:55,881 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create dashboard service.
+2019-03-27 20:51:56,310 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create dashboard deployment.
+2019-03-27 20:51:56,677 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Update node configuration into configmap in the namespace [ kube-system ] as the name [ pai-node-config ] 
+2019-03-27 20:51:56,767 [INFO] - deployment.paiLibrary.common.kubernetes_handler : configmap named pai-node-config is updated.
+2019-03-27 20:51:56,808 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : The kubernetes deployment is finished!
+2019-03-27 20:51:56,809 [INFO] - __main__ : Finish initializing PAI k8s cluster.
+2019-03-27 20:55:55,276 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 20:55:55,276 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 20:55:55,276 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 20:55:55,277 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 20:55:55,278 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 20:55:55,279 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : ----------     Dangerous Operation!!!    ---------------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : ------     Your k8s Cluster will be destroyed    -------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : ------     PAI service on k8s will be stopped    -------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:55:55,279 [WARNING] - __main__ : ----    Please ensure you wanna do this operator, ------
+2019-03-27 20:55:55,280 [WARNING] - __main__ : -------        after knowing all risk above.     -------
+2019-03-27 20:55:55,280 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:55:55,280 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:55:59,643 [INFO] - __main__ : Begin to clean up whole cluster.
+2019-03-27 20:55:59,647 [WARNING] - deployment.k8sPaiLibrary.maintainlib.clean : Begin to destroy whole cluster.
+2019-03-27 20:55:59,648 [WARNING] - deployment.k8sPaiLibrary.maintainlib.clean : After destorying, all kubenretes's metadata will be deleted and etcd will be cleaned too.
+2019-03-27 20:55:59,648 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Begin to clean data on host 10.20.37.175
+2019-03-27 20:55:59,678 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : clean job begins !
+2019-03-27 20:55:59,751 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:56:00,024 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:56:00,298 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-27 20:56:00,406 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:56:00,675 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:56:01,116 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:56:01,403 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:56:01,710 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:56:01,864 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:56:01,983 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:56:02,259 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:56:02,536 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf clean.tar
+2019-03-27 20:56:02,624 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:56:02,916 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:56:03,214 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo /bin/bash clean/kubernetes-cleanup.sh
+2019-03-27 20:57:58,696 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:57:58,978 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:57:59,415 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 | head -n 1
+2019-03-27 20:57:59,509 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:57:59,783 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:00,016 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: hostname
+2019-03-27 20:58:00,093 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:00,382 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:00,648 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: hostname
+2019-03-27 20:58:00,721 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:00,991 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:01,237 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: hostname
+2019-03-27 20:58:08,839 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 20:58:08,839 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 20:58:08,840 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 20:58:08,840 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 20:58:08,840 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 20:58:08,840 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 20:58:08,840 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 20:58:08,841 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 20:58:08,841 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 20:58:08,841 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 20:58:08,841 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 20:58:08,841 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 20:58:08,841 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 20:58:08,842 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 20:58:08,842 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 20:58:08,842 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 20:58:08,842 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 20:58:08,842 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 20:58:08,842 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:58:08,843 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:58:08,843 [WARNING] - __main__ : ----------     Dangerous Operation!!!    ---------------
+2019-03-27 20:58:08,843 [WARNING] - __main__ : ------     Your k8s Cluster will be destroyed    -------
+2019-03-27 20:58:08,843 [WARNING] - __main__ : ------     PAI service on k8s will be stopped    -------
+2019-03-27 20:58:08,843 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:58:08,843 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:58:08,844 [WARNING] - __main__ : ----    Please ensure you wanna do this operator, ------
+2019-03-27 20:58:08,844 [WARNING] - __main__ : -------        after knowing all risk above.     -------
+2019-03-27 20:58:08,844 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:58:08,844 [WARNING] - __main__ : --------------------------------------------------------
+2019-03-27 20:58:11,953 [INFO] - __main__ : Begin to clean up whole cluster.
+2019-03-27 20:58:11,957 [WARNING] - deployment.k8sPaiLibrary.maintainlib.clean : Begin to destroy whole cluster.
+2019-03-27 20:58:11,957 [WARNING] - deployment.k8sPaiLibrary.maintainlib.clean : After destorying, all kubenretes's metadata will be deleted and etcd will be cleaned too.
+2019-03-27 20:58:11,957 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Begin to clean data on host 10.20.37.175
+2019-03-27 20:58:11,987 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : clean job begins !
+2019-03-27 20:58:12,182 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:12,477 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:12,743 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-27 20:58:12,836 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:13,123 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:13,480 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:13,775 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:14,043 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:58:14,172 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:58:14,315 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:14,596 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:14,898 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf clean.tar
+2019-03-27 20:58:14,974 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:15,259 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:15,583 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo /bin/bash clean/kubernetes-cleanup.sh
+2019-03-27 20:58:16,160 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Successfully running clean job on node 10.20.37.175
+2019-03-27 20:58:16,160 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  package cleaner is working on the folder of 10.20.37.175!
+2019-03-27 20:58:16,172 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  package cleaner's work finished! 
+2019-03-27 20:58:16,175 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  remote host cleaner is working on the host of 10.20.37.175!
+2019-03-27 20:58:16,253 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:16,528 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:16,797 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo rm -rf clean*
+2019-03-27 20:58:16,857 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  remote host cleaning job finished! 
+2019-03-27 20:58:16,857 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Begin to clean data on host 10.20.94.51
+2019-03-27 20:58:16,893 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : clean job begins !
+2019-03-27 20:58:16,968 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:17,401 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:17,738 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: getent passwd lab | cut -d: -f6
+2019-03-27 20:58:17,968 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:18,656 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:19,034 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:19,290 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:19,509 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:58:19,650 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:58:19,758 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:20,049 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:20,304 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: tar -xvf clean.tar
+2019-03-27 20:58:20,383 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:20,651 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:20,902 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo /bin/bash clean/kubernetes-cleanup.sh
+2019-03-27 20:58:23,546 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Successfully running clean job on node 10.20.94.51
+2019-03-27 20:58:23,546 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  package cleaner is working on the folder of 10.20.94.51!
+2019-03-27 20:58:23,554 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  package cleaner's work finished! 
+2019-03-27 20:58:23,555 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  remote host cleaner is working on the host of 10.20.94.51!
+2019-03-27 20:58:23,621 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:23,895 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:24,117 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo rm -rf clean*
+2019-03-27 20:58:24,156 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  remote host cleaning job finished! 
+2019-03-27 20:58:24,156 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Begin to clean data on host 10.20.41.233
+2019-03-27 20:58:24,194 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : clean job begins !
+2019-03-27 20:58:24,265 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:24,661 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:24,921 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-27 20:58:24,996 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:25,272 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:25,650 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:25,914 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:26,160 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:58:26,297 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:58:26,401 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:26,681 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:26,928 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf clean.tar
+2019-03-27 20:58:27,005 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:27,264 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:27,512 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo /bin/bash clean/kubernetes-cleanup.sh
+2019-03-27 20:58:27,941 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : Successfully running clean job on node 10.20.41.233
+2019-03-27 20:58:27,941 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-27 20:58:27,964 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  package cleaner's work finished! 
+2019-03-27 20:58:27,965 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-27 20:58:28,031 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:58:28,315 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:58:28,566 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf clean*
+2019-03-27 20:58:28,624 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean :  remote host cleaning job finished! 
+2019-03-27 20:58:28,625 [INFO] - deployment.k8sPaiLibrary.maintainlib.clean : The kubernetes has been destroyed, and metadata has been removed
+2019-03-27 20:58:28,626 [INFO] - __main__ : Clean up job finished
+2019-03-27 20:59:01,168 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation for each service parser.
+2019-03-27 20:59:01,168 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of machine
+2019-03-27 20:59:01,168 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of machine is passed
+2019-03-27 20:59:01,168 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do pre-validation of kubernetes
+2019-03-27 20:59:01,168 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation of kubernetes is passed
+2019-03-27 20:59:01,168 [INFO] - deployment.clusterObjectModel.cluster_object_model : Pre-validation is successful!
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate cluster object model.
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of machine.
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of machine is generated.
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do generate object model of kubernetes.
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Object model of kubernetes is generated.
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Cluster Object Model is generated.
+2019-03-27 20:59:01,169 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation.
+2019-03-27 20:59:01,170 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of machine.
+2019-03-27 20:59:01,170 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of machine is passed.
+2019-03-27 20:59:01,170 [INFO] - deployment.clusterObjectModel.cluster_object_model : Begin to do post-validation of kubernetes.
+2019-03-27 20:59:01,170 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation of kubernetes is passed.
+2019-03-27 20:59:01,170 [INFO] - deployment.clusterObjectModel.cluster_object_model : Post-validation is successful!
+2019-03-27 20:59:01,170 [INFO] - __main__ : Begin to initialize PAI k8s cluster.
+2019-03-27 20:59:01,202 [WARNING] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy a new cluster to your machine or vm.
+2019-03-27 20:59:01,202 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.37.175, the node role is [ master ]
+2019-03-27 20:59:01,398 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:01,683 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:01,947 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: getent passwd lab | cut -d: -f6
+2019-03-27 20:59:02,033 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:02,302 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:02,669 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:02,928 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:03,174 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:59:03,438 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:59:03,543 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:03,824 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:04,084 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: tar -xvf master-deployment.tar
+2019-03-27 20:59:04,183 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:04,465 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:04,830 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/hosts-check.sh 10.20.37.175
+2019-03-27 20:59:05,049 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:05,385 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:05,606 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/docker-ce-install.sh master-deployment
+2019-03-27 20:59:06,279 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:06,558 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:06,787 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo ./master-deployment/kubelet-start.sh master-deployment
+2019-03-27 20:59:07,327 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running master-deployment job on node 10.20.37.175!
+2019-03-27 20:59:07,327 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.37.175!
+2019-03-27 20:59:07,342 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-27 20:59:07,342 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.37.175!
+2019-03-27 20:59:07,408 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:07,666 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:07,944 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.37.175]: sudo rm -rf proxy-deployment*
+2019-03-27 20:59:07,982 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-27 20:59:07,982 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.94.51, the node role is [ worker ]
+2019-03-27 20:59:08,144 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:08,426 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:08,698 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: getent passwd lab | cut -d: -f6
+2019-03-27 20:59:08,774 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:09,048 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:09,404 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:09,668 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:09,908 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:59:10,089 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:59:10,192 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:10,469 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:10,744 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: tar -xvf worker-deployment.tar
+2019-03-27 20:59:10,830 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:11,121 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:11,399 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/hosts-check.sh 10.20.94.51
+2019-03-27 20:59:11,539 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:11,809 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:12,054 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-27 20:59:12,822 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:13,105 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:13,341 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-27 20:59:13,746 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.94.51!
+2019-03-27 20:59:13,746 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.94.51!
+2019-03-27 20:59:13,756 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-27 20:59:13,757 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.94.51!
+2019-03-27 20:59:13,821 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:14,101 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:14,386 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.94.51]: sudo rm -rf proxy-deployment*
+2019-03-27 20:59:14,434 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-27 20:59:14,435 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Begin to deploy k8s on host 10.20.41.233, the node role is [ worker ]
+2019-03-27 20:59:14,608 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:14,900 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:15,162 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: getent passwd lab | cut -d: -f6
+2019-03-27 20:59:15,250 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:15,519 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:15,891 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:16,173 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:16,405 [INFO] - paramiko.transport.sftp : [chan 0] Opened sftp connection (server version 3)
+2019-03-27 20:59:16,698 [INFO] - paramiko.transport.sftp : [chan 0] sftp session closed.
+2019-03-27 20:59:16,819 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:17,099 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:17,343 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: tar -xvf worker-deployment.tar
+2019-03-27 20:59:17,425 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:17,712 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:17,941 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/hosts-check.sh 10.20.41.233
+2019-03-27 20:59:18,114 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:18,391 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:18,609 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/docker-ce-install.sh worker-deployment
+2019-03-27 20:59:19,309 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:19,580 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:19,815 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo ./worker-deployment/kubelet-start.sh worker-deployment
+2019-03-27 20:59:20,183 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Successfully running worker-deployment job on node 10.20.41.233!
+2019-03-27 20:59:20,183 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner is working on the folder of 10.20.41.233!
+2019-03-27 20:59:20,199 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  package cleaner's work finished! 
+2019-03-27 20:59:20,199 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaner is working on the host of 10.20.41.233!
+2019-03-27 20:59:20,276 [INFO] - paramiko.transport : Connected (version 2.0, client OpenSSH_7.2p2)
+2019-03-27 20:59:20,543 [INFO] - paramiko.transport : Authentication (password) successful!
+2019-03-27 20:59:20,828 [INFO] - deployment.k8sPaiLibrary.maintainlib.common : Executing the command on host [10.20.41.233]: sudo rm -rf proxy-deployment*
+2019-03-27 20:59:20,871 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy :  remote host cleaning job finished! 
+2019-03-27 20:59:20,871 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Execute the script to install kubectl on your host!
+2019-03-27 20:59:20,906 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl on the dev-box.
+2019-03-27 20:59:20,906 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the configuation file of kubectl.
+2019-03-27 20:59:20,907 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Cluster configuration is detected.
+2019-03-27 20:59:20,907 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Generate the KUBECONIFG based on the cluster configuration.
+2019-03-27 20:59:20,911 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully configure kubeconfig in the dev-box.
+2019-03-27 20:59:21,278 [INFO] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : Successfully install kubectl and configure it!
+2019-03-27 20:59:23,415 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create kube-proxy daemon for kuberentes cluster.
+2019-03-27 20:59:23,902 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create kubernetes dashboard deployment for kuberentes cluster.
+2019-03-27 20:59:23,902 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create dashboard service.
+2019-03-27 20:59:24,342 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Create dashboard deployment.
+2019-03-27 20:59:24,812 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : Update node configuration into configmap in the namespace [ kube-system ] as the name [ pai-node-config ] 
+2019-03-27 20:59:24,915 [INFO] - deployment.paiLibrary.common.kubernetes_handler : configmap named pai-node-config is updated.
+2019-03-27 20:59:24,951 [INFO] - deployment.k8sPaiLibrary.maintainlib.deploy : The kubernetes deployment is finished!
+2019-03-27 20:59:24,952 [INFO] - __main__ : Finish initializing PAI k8s cluster.

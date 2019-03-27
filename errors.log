@@ -3,3 +3,6 @@
 2019-03-21 22:43:07,160 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
 2019-03-21 22:47:29,010 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
 2019-03-21 22:53:50,666 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
+2019-03-22 12:59:14,569 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
+2019-03-22 14:36:05,487 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.
+2019-03-22 14:59:05,984 [ERROR] - deployment.k8sPaiLibrary.maintainlib.kubectl_install : kubectl ready test failed. Exit paictl.

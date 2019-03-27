@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="882fa594-b36a-48ca-b9f3-24fba9ad9cc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deployment/quick-start/cluster-configuration.yaml.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/quick-start/services-configuration.yaml.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kubernetes-install.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kubernetes-install.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/add-member-to-etcd-cluster.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/add-member-to-etcd-cluster.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-config-update.py" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-config-update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-info-root-dir.py" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-info-root-dir.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubectl-install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubectl-install.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/remove-member-from-etcd-cluster.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/remove-member-from-etcd-cluster.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/repair-worker-node.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/repair-worker-node.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubelet.sh.template" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubelet.sh.template" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/stop-etcd-server.sh.template" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/stop-etcd-server.sh.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/paiLibrary/common/directory_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/paiLibrary/common/directory_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/quick-start/quick-start.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/quick-start/quick-start.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/errors.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
     </list>
@@ -30,51 +20,79 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kubernetes_install$paictl.coverage" NAME="CMD1、生成配置文件 Coverage Results" MODIFIED="1553180588240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/kubernetes_install$CMD2k8s.coverage" NAME="CMD2、安装k8s Coverage Results" MODIFIED="1553181518529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kubernetes_install$CMD1.coverage" NAME="CMD1、生成配置文件 Coverage Results" MODIFIED="1553691476388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/kubernetes_install$CMD2k8s.coverage" NAME="CMD2、安装k8s Coverage Results" MODIFIED="1553691089208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="80">
+              <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubelet.sh.template">
+        <entry file="file://$PROJECT_DIR$/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+            <state relative-caret-position="225">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/repair-worker-node.sh">
+        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/clean.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/remove-member-from-etcd-cluster.sh">
+        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/add.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="676">
+              <caret line="83" column="60" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/common.py">
+        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/deploy.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="223" column="18" selection-start-line="223" selection-start-column="18" selection-end-line="223" selection-end-column="18" />
+            <state relative-caret-position="253">
+              <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -82,47 +100,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/paiCluster/cluster_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+            <state relative-caret-position="405">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding>
                 <element signature="e#1124#1133#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/clusterObjectModel/cluster_object_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="144" selection-start-line="144" selection-end-line="144" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/add.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/deploy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="201" column="1" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/info.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="298" column="88" selection-start-line="298" selection-start-column="88" selection-end-line="298" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -138,20 +120,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>kubectl-install</find>
-      <find>pathofusllocalbin</find>
-      <find>/kubelet</find>
-      <find>staticpod</find>
-      <find>Docker ROOT DIR IS</find>
-      <find>Skip this precess</find>
-      <find>8080</find>
       <find>Successfully configure kubeconfig in the dev-box.</find>
-      <find>kubelet-start.sh</find>
       <find>Authentication</find>
+      <find>for host</find>
+      <find>cat /etc/resolv.conf</find>
+      <find>for hostnam</find>
+      <find>for h</find>
+      <find>kubectl_install</find>
+      <find>for hostname in com[&quot;kubernetes&quot;][&quot;{0}-list&quot;.format(role)]</find>
+      <find>common</find>
+      <find>hostname</find>
+      <find>result_stdout, result_stderr = pai_common.ssh_shell_paramiko_with_result(</find>
       <find>Executing the command on host</find>
+      <find>rbac.authorization.k8s.io</find>
+      <find>rules:</find>
+      <find>unrecognized</find>
+      <find>Begin to generate the template file</find>
+      <find>rules</find>
+      <find>spec</find>
+      <find>apiserver</find>
+      <find>hostcofig</find>
+      <find>etcdfix</find>
+      <find>etcdid</find>
+      <find>etcd</find>
+      <find>etcd-ser</find>
+      <find>maint</find>
+      <find>worker</find>
+      <find>'</find>
+      <find>kubectl</find>
+      <find>kubelet-start.sh</find>
+      <find>/kubernetes-cleanup.sh</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -162,35 +164,37 @@
       <list>
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/add.yaml" />
         <option value="$PROJECT_DIR$/Pipfile" />
-        <option value="$PROJECT_DIR$/build.sh" />
         <option value="$PROJECT_DIR$/deployment/paiLibrary/paiCluster/cluster_util.py" />
-        <option value="$PROJECT_DIR$/paictl.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/deployment/sysconf/logging.yaml" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/kubectl_install.py" />
         <option value="$PROJECT_DIR$/deployment/quick-start/quick-start.yaml" />
         <option value="$PROJECT_DIR$/deployment/clusterObjectModel/cluster_object_model.py" />
         <option value="$PROJECT_DIR$/deployment/paiLibrary/common/directory_handler.py" />
-        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh" />
-        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/add-member-to-etcd-cluster.sh" />
-        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/remove-member-from-etcd-cluster.sh" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/repair-worker-node.sh" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-config-update.py" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-info-root-dir.py" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/stop-etcd-server.sh.template" />
-        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubectl-install.sh" />
         <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubelet.sh.template" />
+        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh" />
+        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh" />
+        <option value="$PROJECT_DIR$/paictl.py" />
+        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/apiserver.yaml.template" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh" />
+        <option value="$PROJECT_DIR$/build.sh" />
+        <option value="$PROJECT_DIR$/parcel-center/10.20.37.175/clean/kubernetes-cleanup.sh" />
+        <option value="$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1698" />
-    <option name="y" value="95" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="224" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,33 +232,20 @@
               <item name="kubernetes-install" type="b2602c69:ProjectViewProjectNode" />
               <item name="kubernetes-install" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="k8sPaiLibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kubernetes-install" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kubernetes-install" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="paiLibrary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kubernetes-install" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kubernetes-install" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="quick-start" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -274,7 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CMD2、安装k8s">
+  <component name="RunManager" selected="Python.CMD1、生成配置文件">
     <configuration name="CMD1、生成配置文件" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kubernetes-install" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -340,32 +332,38 @@
       <option name="presentableId" value="Default" />
       <updated>1553141600628</updated>
       <workItem from="1553141609853" duration="6201000" />
-      <workItem from="1553151012297" duration="19239000" />
+      <workItem from="1553151012297" duration="21939000" />
+      <workItem from="1553229177919" duration="9166000" />
+      <workItem from="1553496780421" duration="3915000" />
+      <workItem from="1553616587263" duration="678000" />
+      <workItem from="1553657944198" duration="641000" />
+      <workItem from="1553673795737" duration="5000" />
+      <workItem from="1553691008214" duration="594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25440000" />
+    <option name="totallyTimeSpent" value="43139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1698" y="95" width="1920" height="1057" extended-state="0" />
+    <frame x="224" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18903089" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2846924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5772021" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.55336785" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47515923" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5732484" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32953367" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.78853506" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.36476684" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49946752" weight="0.38860103" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49946752" visible="true" weight="0.6713376" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -430,6 +428,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -457,203 +469,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/add.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/OpenSSL/SSL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/sysconf/logging.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/common/file_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/kubernetes-configuration.yaml.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/k8s-role-definition.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/services-configuration.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="267" selection-start-line="267" selection-end-line="267" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1011541305/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="399" column="4" selection-start-line="399" selection-start-column="4" selection-end-line="399" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/restart-etcd-server.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kube-proxy.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/apiserver.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/config.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/controller-manager.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/dashboard-deployment.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/dashboard-service.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/docker-daemon.json.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/scheduler.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/clusterObjectModel/paiObjectModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="390" column="18" lean-forward="true" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/haproxy.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/haproxy.cfg.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/kubectl_install.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/deploy.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/services-configuration.yaml.template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/quick-start-example.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/quick-start.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" selection-start-line="28" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/cluster-configuration.yaml.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/stop-etcd-server.sh.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubectl-install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/quick-start/pai-config/cluster-configuration.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paictl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-          <folding>
-            <element signature="e#1146#1183#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,13 +483,6 @@
           <folding>
             <element signature="e#1123#1160#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/add-member-to-etcd-cluster.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -688,34 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="84" column="61" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/clusterObjectModel/cluster_object_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/paiCluster/cluster_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
-          <folding>
-            <element signature="e#1124#1133#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,45 +514,268 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/quick-start/quick-start.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/repair-worker-node.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="360">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubelet.sh.template">
+    <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/clusterObjectModel/paiObjectModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        <state relative-caret-position="297">
+          <caret line="87" column="8" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/add.py">
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kube-proxy.yaml.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="-140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/quick-start/pai-config/kubernetes-configuration.yaml" />
+    <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/paiService/service_template_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/dashboard-deployment.yaml.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/dashboard-service.yaml.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/docker-daemon.json.template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/scheduler.yaml.template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/haproxy.cfg.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/haproxy.yaml.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/clusterObjectModel/test/data/configuration-overwrite/kubernetes-configuration.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="223" column="18" selection-start-line="223" selection-start-column="18" selection-end-line="223" selection-end-column="18" />
+        <state relative-caret-position="1305">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/deploy.py">
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/apiserver.yaml.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="201" column="1" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="71" />
+        <state relative-caret-position="360">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/etcdfix.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/etcd.yaml.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="166" column="83" selection-start-line="166" selection-start-column="83" selection-end-line="166" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/add-member-to-etcd-cluster.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/stop-etcd-server.sh.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/etcdfix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="111" column="53" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/info.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="-5122">
           <caret line="298" column="88" selection-start-line="298" selection-start-column="88" selection-end-line="298" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/quick-start/pai-config/k8s-role-definition.yaml" />
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/yalonglee.xml" />
+    <entry file="file://$PROJECT_DIR$/deployment/quick-start/pai-config/cluster-configuration.yaml" />
+    <entry file="file://$PROJECT_DIR$/errors.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/kubernetes-install.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/deploy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3075">
+          <caret line="217" column="33" selection-start-line="217" selection-start-column="33" selection-end-line="217" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainlib/kubectl_install.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubelet.sh.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/config.template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paictl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="166" column="35" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="35" />
+          <folding>
+            <element signature="e#1146#1183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/paiLibrary/paiCluster/cluster_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#1124#1133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/add.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="83" column="60" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/deploy.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/kubelet-start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/docker-ce-install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintaintool/hosts-check.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/maintainconf/clean.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parcel-center/10.20.37.175/clean/kubernetes-cleanup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/k8sPaiLibrary/template/kubernetes-cleanup.sh.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
         </state>
       </provider>
     </entry>
